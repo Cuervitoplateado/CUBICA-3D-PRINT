@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÚBICA 3D PRINT</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6; /* Blue scrollbar thumb */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563eb; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white p-4 shadow-lg rounded-b-xl">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-extrabold tracking-tight">CÚBICA 3D PRINT</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-white hover:text-blue-200 transition duration-300 ease-in-out text-lg font-semibold">Inicio</a></li>
+                    <li><a href="#catalog" class="text-white hover:text-blue-200 transition duration-300 ease-in-out text-lg font-semibold">Catálogo</a></li>
+                    <li><a href="#contact" class="text-white hover:text-blue-200 transition duration-300 ease-in-out text-lg font-semibold">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6">
+        <!-- Home Section -->
+        <section id="home" class="bg-white rounded-xl shadow-lg p-8 mb-10 text-center animate-fade-in-down">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+                    Da vida a tus ideas con la impresión 3D
+                </h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    En CÚBICA 3D PRINT, transformamos tus diseños digitales en objetos tangibles, desde juguetes personalizados hasta prototipos funcionales. La calidad y la innovación son nuestra prioridad.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#catalog" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                        Explora el Catálogo
+                    </a>
+                    <a href="#contact" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                        Pide tu Diseño Personalizado
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section (Optional, but good for context) -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-10 animate-fade-in-up">
+            <h3 class="text-3xl font-bold text-gray-900 mb-6 text-center">¿Quiénes Somos?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-lg text-gray-700 mb-4">
+                        CÚBICA 3D PRINT nace de la pasión por la tecnología y la creatividad. Nos especializamos en la fabricación de objetos únicos y de alta calidad mediante impresión 3D, ofreciendo soluciones personalizadas para tus necesidades.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        Utilizamos materiales duraderos y técnicas de vanguardia para asegurar que cada producto no solo sea estéticamente agradable, sino también funcional y resistente.
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://placehold.co/400x250/60a5fa/ffffff?text=Impresora+3D" alt="Impresora 3D trabajando" class="rounded-lg shadow-md w-full max-w-sm">
+                </div>
+            </div>
+        </section>
+
+        <!-- Catalog Section -->
+        <section id="catalog" class="bg-white rounded-xl shadow-lg p-8 mb-10 animate-fade-in-up">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">Nuestro Catálogo de Productos</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Product Card 1: Cohete de Juguete -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/400x300/3b82f6/ffffff?text=Cohete+3D" alt="Cohete de juguete impreso en 3D" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Cohete Explorador</h3>
+                        <p class="text-gray-700 text-sm mb-3 line-clamp-2">
+                            Un cohete de juguete detallado, perfecto para pequeños exploradores espaciales. Impreso en PLA ecológico.
+                        </p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-extrabold text-blue-600">$25.00</span>
+                            <span class="text-sm text-gray-500">Juguetes</span>
+                        </div>
+                        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md transition duration-300 ease-in-out">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2: Maceta Geométrica -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/400x300/8b5cf6/ffffff?text=Maceta+Geométrica" alt="Maceta geométrica impresa en 3D" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Maceta Geométrica</h3>
+                        <p class="text-gray-700 text-sm mb-3 line-clamp-2">
+                            Diseño moderno y minimalista para tus plantas. Ideal para decorar cualquier espacio.
+                        </p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-extrabold text-blue-600">$18.50</span>
+                            <span class="text-sm text-gray-500">Hogar</span>
+                        </div>
+                        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md transition duration-300 ease-in-out">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3: Soporte para Auriculares -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/400x300/ef4444/ffffff?text=Soporte+Auriculares" alt="Soporte para auriculares impreso en 3D" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Soporte Auriculares</h3>
+                        <p class="text-gray-700 text-sm mb-3 line-clamp-2">
+                            Organiza tu escritorio con este práctico soporte. Compatible con la mayoría de auriculares.
+                        </p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-extrabold text-blue-600">$12.00</span>
+                            <span class="text-sm text-gray-500">Accesorios</span>
+                        </div>
+                        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md transition duration-300 ease-in-out">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 4: Figura de Acción Personalizada -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/400x300/22c55e/ffffff?text=Figura+Acción" alt="Figura de acción personalizada impresa en 3D" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Figura de Acción</h3>
+                        <p class="text-gray-700 text-sm mb-3 line-clamp-2">
+                            Crea tu propio héroe o personaje. ¡Totalmente personalizable! Contáctanos para más detalles.
+                        </p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-extrabold text-blue-600">$45.00+</span>
+                            <span class="text-sm text-gray-500">Personalizado</span>
+                        </div>
+                        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md transition duration-300 ease-in-out">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 5: Llavero Personalizado -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/400x300/f97316/ffffff?text=Llavero+3D" alt="Llavero personalizado impreso en 3D" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Llavero Personalizado</h3>
+                        <p class="text-gray-700 text-sm mb-3 line-clamp-2">
+                            Lleva tu nombre, logo o diseño favorito. Un regalo único y práctico.
+                        </p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-extrabold text-blue-600">$8.00</span>
+                            <span class="text-sm text-gray-500">Accesorios</span>
+                        </div>
+                        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md transition duration-300 ease-in-out">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 6: Organizador de Escritorio -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/400x300/14b8a6/ffffff?text=Organizador+Escritorio" alt="Organizador de escritorio impreso en 3D" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Organizador de Escritorio</h3>
+                        <p class="text-gray-700 text-sm mb-3 line-clamp-2">
+                            Mantén tu espacio de trabajo ordenado con este organizador modular.
+                        </p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-extrabold text-blue-600">$22.00</span>
+                            <span class="text-sm text-gray-500">Hogar</span>
+                        </div>
+                        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md transition duration-300 ease-in-out">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 7: Juguete Articulado -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/400x300/6d28d9/ffffff?text=Juguete+Articulado" alt="Juguete articulado impreso en 3D" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Dragón Articulado</h3>
+                        <p class="text-gray-700 text-sm mb-3 line-clamp-2">
+                            Un impresionante dragón articulado que puedes posar de mil maneras.
+                        </p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-extrabold text-blue-600">$35.00</span>
+                            <span class="text-sm text-gray-500">Juguetes</span>
+                        </div>
+                        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md transition duration-300 ease-in-out">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 8: Posavasos Personalizados -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/400x300/fbbf24/ffffff?text=Posavasos+3D" alt="Posavasos personalizados impresos en 3D" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Set de Posavasos</h3>
+                        <p class="text-gray-700 text-sm mb-3 line-clamp-2">
+                            Protege tus superficies con estilo. Disponibles en varios diseños y colores.
+                        </p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-extrabold text-blue-600">$15.00</span>
+                            <span class="text-sm text-gray-500">Hogar</span>
+                        </div>
+                        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md transition duration-300 ease-in-out">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white rounded-xl shadow-lg p-8 animate-fade-in-up">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">Contáctanos</h2>
+            <div class="max-w-2xl mx-auto">
+                <p class="text-lg text-gray-700 mb-6 text-center">
+                    ¿Tienes una idea en mente? ¿Necesitas un diseño personalizado o tienes alguna pregunta? ¡Estamos aquí para ayudarte!
+                </p>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Tu nombre completo">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="tu.email@ejemplo.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Describe tu proyecto o consulta..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center mt-10 rounded-t-xl">
+        <p>&copy; 2025 CÚBICA 3D PRINT. Todos los derechos reservados.</p>
+        <p class="text-sm mt-2">Diseñado con pasión por la impresión 3D.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
